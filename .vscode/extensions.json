@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "jpoissonnier.vscode-styled-components",
+    "esbenp.prettier-vscode",
+    "orta.vscode-jest"
+  ],
+  "unwantedRecommendations": []
+}

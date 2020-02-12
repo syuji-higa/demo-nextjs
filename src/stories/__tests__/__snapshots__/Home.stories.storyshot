@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Pages/Home Counter 1`] = `
+<section>
+  <h2>
+    Counter
+  </h2>
+  <p>
+    Count: 
+    <span
+      data-testid="count"
+    >
+      0
+    </span>
+  </p>
+  <div
+    className="sc-AxhCb ZaNiK"
+  >
+    <div
+      className="sc-AxhUy fLfuOo"
+    >
+      <button
+        className="sc-AxiKw ipfree"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+    </div>
+    <div
+      className="sc-AxhUy fLfuOo"
+    >
+      <button
+        className="sc-AxiKw ipfree"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+    </div>
+    <div
+      className="sc-AxhUy fLfuOo"
+    >
+      <button
+        className="sc-AxiKw ipfree"
+        onClick={[Function]}
+        type="button"
+      >
+        reset
+      </button>
+    </div>
+  </div>
+</section>
+`;

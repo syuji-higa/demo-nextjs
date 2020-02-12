@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Counter Text 1`] = `
+<section>
+  <h2
+    className="heading"
+  >
+    Counter
+  </h2>
+  <p
+    className="count"
+  >
+    Count:
+     
+    <span
+      className="count-text"
+      data-testid="count"
+    >
+      0
+    </span>
+  </p>
+  <button
+    className="button-decrement"
+    onClick={[Function]}
+    type="button"
+  >
+    -
+  </button>
+  <button
+    className="button-increment"
+    onClick={[Function]}
+    type="button"
+  >
+    +
+  </button>
+  <button
+    className="button-reset"
+    onClick={[Function]}
+    type="button"
+  >
+    reset
+  </button>
+</section>
+`;

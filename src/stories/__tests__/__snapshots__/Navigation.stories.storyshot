@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Common/Navigation The Navigation 1`] = `
+<nav>
+  <ul
+    className="sc-AxjAm jhiTqR"
+  >
+    <li
+      className="sc-AxirZ iqbwvK"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Home
+      </a>
+    </li>
+    <li
+      className="sc-AxirZ iqbwvK"
+    >
+      <a
+        href="/projects/1"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Project: 
+        1
+      </a>
+    </li>
+    <li
+      className="sc-AxirZ iqbwvK"
+    >
+      <a
+        href="/projects/2"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Project: 
+        2
+      </a>
+    </li>
+    <li
+      className="sc-AxirZ iqbwvK"
+    >
+      <a
+        href="/projects/3"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Project: 
+        3
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
