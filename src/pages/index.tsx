@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { NextPage } from 'next'
+import { NextPage, GetServerSideProps } from 'next'
 import Head from 'next/head'
 import { useDispatch, useSelector } from 'react-redux'
 import Counter from '~/components/pages/home/Counter'
@@ -11,8 +11,8 @@ type Props = {
 }
 
 type FetchParams = {
-  a: string
-  b: string[]
+  timestamp: number
+  arr: string[]
 }
 
 const Home: NextPage<Props> = ({ fetchUrl }) => {
@@ -51,9 +51,11 @@ const Home: NextPage<Props> = ({ fetchUrl }) => {
   )
 }
 
-Home.getInitialProps = async (): Promise<Props> => {
-  const params: FetchParams = { a: 'a', b: ['b1', 'b2'] }
-  console.log(process.env.RESTURL)
+export const getServerSideProps: GetServerSideProps = async () => {
+  const params: FetchParams = {
+    timestamp: Date.now(),
+    arr: ['a', 'b', 'c']
+  }
   const { data, err } = await fetch<FetchParams>(`${process.env.RESTURL}/get`, {
     params
   })
@@ -62,9 +64,11 @@ Home.getInitialProps = async (): Promise<Props> => {
     console.error(err.error.message)
   }
 
-  return {
+  const props: Props = {
     fetchUrl: data?.url || null
   }
+
+  return { props }
 }
 
 export default Home

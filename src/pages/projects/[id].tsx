@@ -1,4 +1,4 @@
-import { NextPage, NextPageContext } from 'next'
+import { NextPage, GetServerSideProps } from 'next'
 import Head from 'next/head'
 import Error from 'next/error'
 
@@ -21,14 +21,14 @@ const Projects: NextPage<Props> = ({ id }) => {
   )
 }
 
-Projects.getInitialProps = async ({
-  query
-}: NextPageContext): Promise<Props> => {
+export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const id = Number(query.id)
 
-  return {
+  const props: Props = {
     id: Number.isFinite(id) ? id : null
   }
+
+  return { props }
 }
 
 export default Projects
