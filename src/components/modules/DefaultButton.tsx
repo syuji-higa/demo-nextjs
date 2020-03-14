@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { NextPage } from 'next'
 import styled from 'styled-components'
 import media from 'styled-media-query'
