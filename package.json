@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node server.js",
+    "build-staging": "STAGING=1 next build",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore .",
