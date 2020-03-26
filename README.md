@@ -23,7 +23,10 @@
 # dev
 npm run dev
 
-# build
+# build for staging
+npm run build-staging
+
+# build for production
 npm run build
 
 # start
