@@ -1,4 +1,4 @@
-import * as React, { useState } from 'react'
+import React, { useState } from 'react'
 import { NextPage } from 'next'
 import DefaultButton from '~/components/modules/DefaultButton'
 import styled from 'styled-components'
