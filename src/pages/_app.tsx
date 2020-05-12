@@ -6,6 +6,11 @@ import { ThemeProvider } from 'styled-components'
 import 'sanitize.css'
 import TheNavigation from '~/components/common/TheNavigation'
 
+export const reportWebVitals = (metric: any): void => {
+  // These metrics can be sent to any analytics service
+  console.log(metric)
+}
+
 const store = setupStore()
 const theme = {}
 
